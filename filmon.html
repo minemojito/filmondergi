@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filmon - Dijital Film Dergisi</title>
+    <style>
+        /* Genel Ayarlar ve Minimalist Tipografi */
+        body {
+            background-color: #ffffff;
+            color: #111111;
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        /* Üst Menü (Header) */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 40px 5%;
+            border-bottom: 1px solid #eeeeee;
+        }
+
+        .logo {
+            font-size: 32px;
+            font-weight: bold;
+            text-decoration: none;
+            color: #000000;
+            letter-spacing: -1px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #555555;
+            margin-left: 30px;
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #000000;
+        }
+
+        /* Ana İçerik Alanı ve Dikey Izgara Yapısı */
+        main {
+            padding: 60px 5%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .section-title {
+            font-size: 18px;
+            font-weight: normal;
+            margin-bottom: 60px;
+            text-transform: uppercase;
+            color: #888888;
+            letter-spacing: 2px;
+        }
+
+        .grid-container {
+            display: grid;
+            /* Kapakların dikey oranını korumak ve yan yana sığdırmak için 
+               sütun sayısını kısıtlıyoruz. 
+            */
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 60px;
+            grid-template-rows: auto; /* Satır yüksekliğini içeriğe bırak */
+        }
+
+        /* Dergi Sayıları / Kapak Kartları */
+        .article-card {
+            text-decoration: none;
+            color: inherit;
+            display: flex;
+            flex-direction: column; /* İçeriği dikey sırala */
+            border: 1px solid transparent;
+            transition: border-color 0.3s ease;
+        }
+
+        .article-card:hover {
+            border-color: #eeeeee;
+        }
+
+        /* Bu kısım sorununuzu çözen anahtar koddur.
+           Görüntünün kendi doğal aspect-ratio'sunu korur.
+        */
+        .article-image {
+            width: 100%;
+            height: auto; /* Yüksekliği içeriğe bırak */
+            display: block; /* Alt boşlukları engelle */
+            object-fit: contain; /* Görüntünün tamamını kutuya sığdır (asla kesme) */
+            margin-bottom: 25px;
+            transition: opacity 0.3s ease;
+        }
+
+        .article-card:hover .article-image {
+            opacity: 0.90;
+        }
+
+        .article-category {
+            font-size: 12px;
+            color: #999999;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+            display: block;
+            padding: 0 15px; /* Metinler için iç boşluk */
+        }
+
+        .article-title {
+            font-size: 22px;
+            font-weight: 500;
+            margin: 0;
+            line-height: 1.3;
+            letter-spacing: -0.5px;
+            padding: 0 15px 25px 15px; /* Metinler için iç boşluk ve alt boşluk */
+        }
+
+        /* Güncellenmiş Minimalist Footer Stili */
+        footer {
+            text-align: center;
+            padding: 60px 5%;
+            border-top: 1px solid #eeeeee;
+            margin-top: 80px;
+        }
+
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-bottom: 20px;
+        }
+
+        .footer-links a {
+            text-decoration: none;
+            color: #555555;
+            font-size: 13px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: color 0.3s ease;
+        }
+
+        .footer-links a:hover {
+            color: #000000;
+        }
+
+        .copyright {
+            font-size: 12px;
+            color: #aaaaaa;
+            margin: 0;
+        }
+        
+    </style>
+</head>
+<body>
+
+    <header>
+        <a href="filmon.html" class="logo">F.</a>
+        <nav>
+            <a href="filmon.html">Ana Sayfa</a>
+            <a href="#">Sayılar</a>
+            <a href="hakkımızda.html">Hakkında</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1 class="section-title">Son Sayılarımız</h1>
+        
+        <div class="grid-container">
+            <a href="mayıssayısı.html" class="article-card">
+    <img src="../../Documents/bitirme projesi.jpg" alt="Filmon Mayıs 2026 Kapak" class="article-image">
+    <span class="article-category">Editoryal</span>
+    <h2 class="article-title">Mayıs 2026: Geriye Bir Tek Biz Kaldık</h2>
+</a>
+
+            <a href="haziransayısı.html" class="article-card">
+                <img src="../../Documents/haziran sayısı.jpg" alt="Filmon Haziran 2026 Kapak" class="article-image">
+                <span class="article-category">Görsel Kültür</span>
+                <h2 class="article-title">Haziran 2026: Yaz İçin Bir Şeyler</h2>
+            </a>
+        </div>
+    </main>
+
+     <footer>
+        <div class="footer-links">
+            <a href="https://instagram.com/filmondergi" target="_blank">Instagram</a>  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+			<a href="hakkinda.html#contact">İletişim</a>
+        </div>
+        <p class="copyright">&copy; 2026 Filmon. Tüm hakları sablıdır.</p>
+</footer>
+
+</body>
+</html>

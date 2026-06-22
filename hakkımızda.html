@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hakkında - Filmon Dergi</title>
+    <style>
+        body {
+            background-color: #ffffff;
+            color: #111111;
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.8;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 40px 5%;
+            border-bottom: 1px solid #eeeeee;
+        }
+
+        .logo {
+            font-size: 32px;
+            font-weight: bold;
+            text-decoration: none;
+            color: #000000;
+            letter-spacing: -1px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #555555;
+            margin-left: 30px;
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #000000;
+        }
+
+        /* Hakkında Sayfası İçerik Alanı */
+        .about-container {
+            max-width: 800px;
+            margin: 80px auto;
+            padding: 0 5%;
+        }
+
+        .about-title {
+            font-size: 28px;
+            font-weight: 500;
+            margin-bottom: 40px;
+            letter-spacing: -0.5px;
+        }
+
+        .about-content p {
+            font-size: 16px;
+            color: #333333;
+            margin-bottom: 25px;
+            text-align: justify;
+        }
+
+        .founder-info {
+            margin-top: 60px;
+            padding-top: 40px;
+            border-top: 1px solid #eeeeee;
+        }
+
+        .founder-name {
+            font-size: 18px;
+            font-weight: 600;
+            margin: 0 0 5px 0;
+        }
+
+        .founder-title {
+            font-size: 14px;
+            color: #888888;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin: 0;
+        }
+
+       /* Güncellenmiş Minimalist Footer Stili */
+        footer {
+            text-align: center;
+            padding: 60px 5%;
+            border-top: 1px solid #eeeeee;
+            margin-top: 80px;
+        }
+
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-bottom: 20px;
+        }
+
+        .footer-links a {
+            text-decoration: none;
+            color: #555555;
+            font-size: 13px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: color 0.3s ease;
+        }
+
+        .footer-links a:hover {
+            color: #000000;
+        }
+
+        .copyright {
+            font-size: 12px;
+            color: #aaaaaa;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <a href="filmon.html" class="logo">F.</a>
+        <nav>
+            <a href="filmon.html">Ana Sayfa</a>
+            <a href="filmon.html">Sayılar</a>
+            <a href="../../Documents/Filmon/hakkinda.html">Hakkında</a>
+        </nav>
+    </header>
+
+    <main class="about-container">
+        <h1 class="about-title">Sinemaya Mekansal Bir Bakış</h1>
+        
+        <div class="about-content">
+            <p>Filmon, görsel iletişimin gücünü akademik bir altyapıyla birleştiren, bağımsız bir dijital sinema dergisidir. Kocaeli Üniversitesi İletişim Fakültesi sınırları içerisinde bir mezuniyet projesi olarak filizlenen bu yayın, sinemayı yalnızca bir tüketim aracı veya eğlence endüstrisi ürünü olarak görmeyi reddeder. Bunun yerine, perdeye yansıyan her bir kadrajın, sosyolojik yapıların ve mekansal ilişkilerin birer temsili olduğu gerçeğinden yola çıkar.</p>
+
+            <p>Derginin ana odak noktası, filmlerin yüzeysel olay örgülerinin ötesine geçerek görsel iletişim tasarımının ve mekan teorilerinin derinliklerine inmektir. Filmon, okuyucusuna izlediği filmleri birer mimari ve sosyolojik metin olarak yeniden okuma fırsatı sunar.</p>
+
+            <p>Başlangıçta Instagram'ın dinamik ve kaydırmalı yapısı için tasarlanan Filmon, görsel kalitesinden ve estetiğinden ödün vermemek adına dijital bir arşive dönüşmüştür. Görsel karmaşadan uzak, ölçüm çizgilerinin ve gereksiz tasarım elementlerinin arındırıldığı bu sade yapı, tamamen içeriğe ve film analizlerinin derinliğine odaklanmak üzere kurgulanmıştır.</p>
+        </div>
+
+        <div class="founder-info">
+            <h2 class="founder-name">Emine Gündoğdu</h2>
+            <p class="founder-title">Kurucu & Genel Yayın Yönetmeni</p>
+        </div>
+		
+		<div class="contact-section">
+            <h2 class="contact-title">İletişim</h2>
+            <p class="contact-text">Filmon ile ilgili görüşlerinizi paylaşmak veya iş birliği projeleri için aşağıdaki formu doldurarak iletişime geçebilirsiniz.</p>
+            
+            <form action="#" method="POST" class="contact-form">
+                <input type="text" name="isim" placeholder="Adınız Soyadınız" required>
+                <input type="email" name="eposta" placeholder="E-posta Adresiniz" required>
+                <input type="text" name="konu" placeholder="Konu" required>
+                <textarea name="mesaj" rows="5" placeholder="Mesajınız..." required></textarea>
+                <button type="submit">Gönder</button>
+            </form>
+        </div>
+		
+    </main>
+
+    <footer>
+        <div class="footer-links">
+            <a href="https://instagram.com/filmondergi" target="_blank">Instagram</a>  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+			<a href="hakkinda.html#contact">İletişim</a>
+        </div>
+        <p class="copyright">&copy; 2026 Filmon. Tüm hakları sablıdır.</p>
+</footer>
+
+</body>
+</html>
+

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mayıs 2026 - Filmon Dergi</title>
+    <style>
+        body {
+            background-color: #ffffff;
+            color: #111111;
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 30px 5%;
+            border-bottom: 1px solid #eeeeee;
+            position: sticky;
+            top: 0;
+            background-color: rgba(255, 255, 255, 0.95);
+            z-index: 100;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            text-decoration: none;
+            color: #000000;
+        }
+
+        .back-button {
+            text-decoration: none;
+            color: #555555;
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .back-button:hover {
+            color: #000000;
+        }
+
+        .magazine-reader {
+            max-width: 1100px; /* Yan yana iki sayfa sığacağı için alanı biraz genişlettik */
+            margin: 60px auto;
+            padding: 0 5%;
+            display: flex;
+            flex-direction: column;
+            gap: 60px; /* Sayfa grupları arasındaki ferah boşluk */
+        }
+
+        /* Tekli sayfalar için (Kapak ve Arka Kapak) */
+        .single-page {
+            width: 50%; /* Yan yana iki sayfanın yarısı kadar yer kaplaması için */
+            margin: 0 auto; /* Sayfayı ortalar */
+            display: block;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+            height: auto;
+        }
+
+        /* Yan yana duracak sayfalar için taşıyıcı kutu */
+        .magazine-spread {
+            display: flex;
+            width: 100%;
+            justify-content: center;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+        }
+
+        /* Yan yana duran sayfaların her birinin ayarı */
+        .magazine-spread img {
+            width: 50%;
+            display: block;
+            height: auto;
+        }
+        
+        /* Mobil cihazlarda (telefonlarda) yan yana okumak zor olacağı için alt alta sıralama ayarı */
+        @media (max-width: 768px) {
+            .single-page {
+                width: 100%;
+            }
+            .magazine-spread {
+                flex-direction: column;
+                box-shadow: none;
+            }
+            .magazine-spread img {
+                width: 100%;
+                box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <a href="index.html" class="logo">F.</a>
+        <a href="index.html" class="back-button">Ana Sayfaya Dön</a>
+    </header>
+
+    <main class="magazine-reader">
+        
+        <img src="../../Documents/bitirme projesi.jpg" alt="Ön Kapak" class="single-page">
+
+        <div class="magazine-spread">
+            <img src="../../Pictures/mayıs sayısı/bitirme projesi2.jpg" alt="Sayfa 2">
+            <img src="../../Pictures/mayıs sayısı/bitirme projesi3.jpg" alt="Sayfa 3">
+        </div>
+
+        <div class="magazine-spread">
+            <img src="../../Pictures/mayıs sayısı/bitirme projesi4.jpg" alt="Sayfa 4">
+            <img src="../../Pictures/mayıs sayısı/bitirme projesi5.jpg" alt="Sayfa 5">
+        </div>
+
+        <div class="magazine-spread">
+            <img src="../../Pictures/mayıs sayısı/bitirme projesi6.jpg" alt="Sayfa 6">
+            <img src="../../Pictures/mayıs sayısı/bitirme projesi7.jpg" alt="Sayfa 7">
+        </div>
+
+        <div class="magazine-spread">
+            <img src="../../Pictures/mayıs sayısı/bitirme projesi8.jpg" alt="Sayfa 8">
+            <img src="../../Pictures/mayıs sayısı/bitirme projesi9.jpg" alt="Sayfa 9">
+        </div>
+
+        <div class="magazine-spread">
+            <img src="../../Pictures/mayıs sayısı/bitirme projesi10.jpg" alt="Sayfa 10">
+            <img src="../../Pictures/mayıs sayısı/bitirme projesi11.jpg" alt="Sayfa 11">
+        </div>
+
+        <div class="magazine-spread">
+            <img src="../../Pictures/mayıs sayısı/bitirme projesi12.jpg" alt="Sayfa 12">
+            <img src="../../Pictures/mayıs sayısı/bitirme projesi13.jpg" alt="Sayfa 13">
+        </div>
+
+        <div class="magazine-spread">
+            <img src="../../Pictures/mayıs sayısı/bitirme projesi14.jpg" alt="Sayfa 14">
+            <img src="../../Pictures/mayıs sayısı/bitirme projesi15.jpg" alt="Sayfa 15">
+        </div>
+
+        <img src="../../Pictures/mayıs sayısı/bitirme projesi16.jpg" alt="Arka Kapak" class="single-page">
+
+    </main>
+
+</body>
+</html>
