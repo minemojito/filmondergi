@@ -45,24 +45,22 @@
         }
 
         .magazine-reader {
-            max-width: 1100px; /* Yan yana iki sayfa sığacağı için alanı biraz genişlettik */
+            max-width: 1100px;
             margin: 60px auto;
             padding: 0 5%;
             display: flex;
             flex-direction: column;
-            gap: 60px; /* Sayfa grupları arasındaki ferah boşluk */
+            gap: 60px;
         }
 
-        /* Tekli sayfalar için (Kapak ve Arka Kapak) */
         .single-page {
-            width: 50%; /* Yan yana iki sayfanın yarısı kadar yer kaplaması için */
-            margin: 0 auto; /* Sayfayı ortalar */
+            width: 50%;
+            margin: 0 auto;
             display: block;
             box-shadow: 0 4px 15px rgba(0,0,0,0.08);
             height: auto;
         }
 
-        /* Yan yana duracak sayfalar için taşıyıcı kutu */
         .magazine-spread {
             display: flex;
             width: 100%;
@@ -70,14 +68,12 @@
             box-shadow: 0 4px 15px rgba(0,0,0,0.08);
         }
 
-        /* Yan yana duran sayfaların her birinin ayarı */
         .magazine-spread img {
             width: 50%;
             display: block;
             height: auto;
         }
         
-        /* Mobil cihazlarda (telefonlarda) yan yana okumak zor olacağı için alt alta sıralama ayarı */
         @media (max-width: 768px) {
             .single-page {
                 width: 100%;
@@ -91,6 +87,40 @@
                 box-shadow: 0 4px 15px rgba(0,0,0,0.08);
                 margin-bottom: 20px;
             }
+        }
+
+        /* Eklenen Footer Stilleri */
+        footer {
+            text-align: center;
+            padding: 60px 5%;
+            border-top: 1px solid #eeeeee;
+            margin-top: 80px;
+        }
+
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-bottom: 20px;
+        }
+
+        .footer-links a {
+            text-decoration: none;
+            color: #555555;
+            font-size: 13px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: color 0.3s ease;
+        }
+
+        .footer-links a:hover {
+            color: #000000;
+        }
+
+        .copyright {
+            font-size: 12px;
+            color: #aaaaaa;
+            margin: 0;
         }
     </style>
 </head>
@@ -143,6 +173,14 @@
         <img src="bitirme projesi16.jpg" alt="Arka Kapak" class="single-page">
 
     </main>
+
+    <footer>
+        <div class="footer-links">
+            <a href="https://instagram.com/filmon" target="_blank">Instagram</a>
+            <a href="hakkinda.html#contact">İletişim</a>
+        </div>
+        <p class="copyright">&copy; 2026 Filmon. Tüm hakları saklıdır.</p>
+    </footer>
 
 </body>
 </html>
