@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İletişim - Filmon Dergi</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <style>
+        body {
+            background-color: #ffffff;
+            color: #111111;
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 30px 5%;
+            border-bottom: 1px solid #eeeeee;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            text-decoration: none;
+            color: #000000;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #555555;
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-left: 20px;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: #000000;
+        }
+
+        .contact-container {
+            max-width: 600px;
+            margin: 80px auto;
+            padding: 0 5%;
+        }
+
+        .contact-title {
+            font-size: 32px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            letter-spacing: -0.5px;
+        }
+
+        .contact-text {
+            color: #555555;
+            font-size: 16px;
+            line-height: 1.6;
+            margin-bottom: 40px;
+        }
+
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 15px;
+            border: 1px solid #e0e0e0;
+            background-color: #ffffff;
+            font-family: inherit;
+            font-size: 14px;
+            box-sizing: border-box;
+            transition: border-color 0.3s ease;
+        }
+
+        .contact-form input:focus, .contact-form textarea:focus {
+            border-color: #000000;
+            outline: none;
+        }
+
+        .contact-form button {
+            background-color: #000000;
+            color: #ffffff;
+            border: none;
+            padding: 15px;
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .contact-form button:hover {
+            background-color: #222222;
+        }
+
+        footer {
+            text-align: center;
+            padding: 60px 5%;
+            border-top: 1px solid #eeeeee;
+            margin-top: 120px;
+        }
+
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-bottom: 20px;
+        }
+
+        .footer-links a {
+            text-decoration: none;
+            color: #555555;
+            font-size: 13px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .footer-links a:hover {
+            color: #000000;
+        }
+
+        .copyright {
+            font-size: 12px;
+            color: #aaaaaa;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <a href="index.html" class="logo">F.</a>
+        <div class="nav-links">
+            <a href="index.html">Ana Sayfa</a>
+            <a href="hakkinda.html">Hakkında</a>
+        </div>
+    </header>
+
+    <main class="contact-container">
+        <h1 class="contact-title">İletişim</h1>
+        <p class="contact-text">Filmon ile ilgili görüşlerinizi paylaşmak veya iş birliği projeleri için aşağıdaki formu doldurarak iletişime geçebilirsiniz.</p>
+        
+        <form action="#" method="POST" class="contact-form">
+            <input type="text" name="isim" placeholder="Adınız Soyadınız" required>
+            <input type="email" name="eposta" placeholder="E-posta Adresiniz" required>
+            <input type="text" name="konu" placeholder="Konu" required>
+            <textarea name="mesaj" rows="6" placeholder="Mesajınız..." required></textarea>
+            <button type="submit">Gönder</button>
+        </form>
+    </main>
+
+    <footer>
+        <div class="footer-links">
+            <a href="https://instagram.com/filmondergi" target="_blank">Instagram</a>  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            <a href="hakkinda.html">Hakkında</a>
+        </div>
+        <p class="copyright">&copy; 2026 Filmon. Tüm hakları saklıdır.</p>
+    </footer>
+
+</body>
+</html>
